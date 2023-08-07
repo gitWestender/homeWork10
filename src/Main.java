@@ -26,7 +26,8 @@ public class Main {
         String lastName = "Ivanovich";
         String fullName = firstName + " " + middleName + " " + lastName;
 
-        System.out.printf("\nДанные ФИО сотрудника для заполнения отчета — %s\n", fullName.toUpperCase());
+        String fullNameUpperCase = fullName.toUpperCase();
+        System.out.printf("\nДанные ФИО сотрудника для заполнения отчета — %s\n", fullNameUpperCase);
     }
 
     static void task3() {
@@ -37,6 +38,7 @@ public class Main {
         String lastName = "Семёнович";
         String fullName = firstName + " " + middleName + " " + lastName;
 
-        System.out.printf("\nДанные ФИО сотрудника — %s\n", fullName.replace("ё", "е"));
+        String replace = fullName.replace("ё", "е");
+        System.out.printf("\nДанные ФИО сотрудника — %s\n", replace);
     }
 }
